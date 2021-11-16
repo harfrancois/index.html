@@ -1,16 +1,27 @@
 'use strict'
+function greeting() {
+  let greeting = alert("Welcome to CARS4SALE.");
+  answer();
 
-alert("Welcome to CARS4SALE.") 
-
-let greeting = prompt("Would you like to shop with us? Yes/No");
-
-console.log(greeting);
-
-if(greeting.toLowerCase() === "yes"){
-    window.confirm("Would you like to see our inventory?");
-}
-else if(greeting.toLowerCase() === "no"){
-    alert("Thanks for Visiting");
 }
 
- 
+function answer() {
+  let answer = prompt("Would you like to shop with us? Yes or No");
+  if (answer.toLowerCase() == "yes") {
+    alert("Lets take a look at our inventory?");
+  }
+  else if (answer.toLowerCase() == "no") {
+    alert("Are you sure?");
+      
+    
+  }
+  exit();
+}
+
+
+function exit() {
+    let exit = alert("Thanks for Visiting");
+    location.replace("https://www.javascripttutorial.net/");
+}
+
+  greeting();
